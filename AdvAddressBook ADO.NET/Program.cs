@@ -22,8 +22,9 @@ namespace AdvAddressBook_ADO.NET
             addressBookModel.AddressBookType = "Friend";
             addressBookRepo.DataBaseConnection();
             //addressBookRepo.addNewContactToDataBase(addressBookModel);
-            addressBookRepo.EditExiContactToDataBase(addressBookModel, "poonam");
-            addressBookRepo.deleteExiContactInDataBase("Diksha");
+            //addressBookRepo.EditExiContactToDataBase(addressBookModel, "poonam");
+            //addressBookRepo.deleteExiContactInDataBase("Diksha");
+            addressBookRepo.personBelongingCityOrState();
         }
     }
 }
