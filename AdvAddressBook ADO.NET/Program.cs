@@ -10,18 +10,19 @@ namespace AdvAddressBook_ADO.NET
 
             AddressBookRepo addressBookRepo = new AddressBookRepo();
             AddressBookModel addressBookModel = new AddressBookModel();
-            addressBookModel.FirstName = "Akash";
-            addressBookModel.LastName = "Sangale";
-            addressBookModel.Address = "Tawarja";
+            addressBookModel.FirstName = "Diksha";
+            addressBookModel.LastName = "Budde";
+            addressBookModel.Address = "Vakil Colony";
             addressBookModel.City = "latur";
             addressBookModel.State = "Maharashtra";
             addressBookModel.Zip = 413512;
             addressBookModel.PhoneNumber = 8149713160;
-            addressBookModel.Email = "dhiraj@gmail.com";
+            addressBookModel.Email = "poonam@gmail.com";
             addressBookModel.AddressBookName = "friend address book";
             addressBookModel.AddressBookType = "Friend";
             addressBookRepo.DataBaseConnection();
-            addressBookRepo.addNewContactToDataBase(addressBookModel);
+            //addressBookRepo.addNewContactToDataBase(addressBookModel);
+            addressBookRepo.EditExiContactToDataBase(addressBookModel, "poonam");
         }
     }
 }
