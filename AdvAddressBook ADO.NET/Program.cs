@@ -24,7 +24,8 @@ namespace AdvAddressBook_ADO.NET
             //addressBookRepo.addNewContactToDataBase(addressBookModel);
             //addressBookRepo.EditExiContactToDataBase(addressBookModel, "poonam");
             //addressBookRepo.deleteExiContactInDataBase("Diksha");
-            addressBookRepo.personBelongingCityOrState();
+            //addressBookRepo.personBelongingCityOrState();
+            addressBookRepo.CountByCityAndState();
         }
     }
 }
