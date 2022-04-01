@@ -27,7 +27,8 @@ namespace AdvAddressBook_ADO.NET
             //addressBookRepo.personBelongingCityOrState();
             //addressBookRepo.CountByCityAndState();
             //addressBookRepo.sortedAlphabeticallyByFirstName();
-            addressBookRepo.identifyAddressBookWithNameAndType("Priya", "Friends", "friends address book");
+            //addressBookRepo.identifyAddressBookWithNameAndType("Priya", "Friends", "friends address book");
+            addressBookRepo.getNumberOfPersonCountByType();
         }
     }
 }
