@@ -20,15 +20,41 @@ namespace AdvAddressBook_ADO.NET
             addressBookModel.Email = "poonam@gmail.com";
             addressBookModel.AddressBookName = "friend address book";
             addressBookModel.AddressBookType = "Friend";
+            
             addressBookRepo.DataBaseConnection();
-            //addressBookRepo.addNewContactToDataBase(addressBookModel);
-            //addressBookRepo.EditExiContactToDataBase(addressBookModel, "poonam");
-            //addressBookRepo.deleteExiContactInDataBase("Diksha");
-            //addressBookRepo.personBelongingCityOrState();
-            //addressBookRepo.CountByCityAndState();
-            //addressBookRepo.sortedAlphabeticallyByFirstName();
-            //addressBookRepo.identifyAddressBookWithNameAndType("Priya", "Friends", "friends address book");
+            addressBookRepo.addNewContactToDataBase(addressBookModel);
+            addressBookRepo.EditExiContactToDataBase(addressBookModel, "poonam");
+            addressBookRepo.deleteExiContactInDataBase("Diksha");
+            addressBookRepo.personBelongingCityOrState();
+            addressBookRepo.CountByCityAndState();
+            addressBookRepo.sortedAlphabeticallyByFirstName();
+            addressBookRepo.identifyAddressBookWithNameAndType("Priya", "Friends", "friends address book");
             addressBookRepo.getNumberOfPersonCountByType();
+
+            AddressBookModel addressBookModel1 = new AddressBookModel();
+            addressBookModel1.FirstName = "Poonam";
+            addressBookModel1.LastName = "budde";
+            addressBookModel1.Address = "shivaji chawk";
+            addressBookModel1.City = "latur";
+            addressBookModel1.State = "Maharashtra";
+            addressBookModel1.Zip = 413512;
+            addressBookModel1.PhoneNumber = 8149713160;
+            addressBookModel1.Email = "poonam@gmail.com";
+            addressBookModel1.AddressBookName = "friend address book";
+            addressBookModel1.AddressBookType = "Friends";
+
+            addressBookModel1.FirstName = "Poonam";
+            addressBookModel1.LastName = "budde";
+            addressBookModel1.Address = "shivaji chawk";
+            addressBookModel1.City = "latur";
+            addressBookModel1.State = "Maharashtra";
+            addressBookModel1.Zip = 413512;
+            addressBookModel1.PhoneNumber = 8149713160;
+            addressBookModel1.Email = "poonam@gmail.com";
+            addressBookModel1.AddressBookName = "family address book";
+            addressBookModel1.AddressBookType = "Family";
+
+            addressBookRepo.addPersonToBothFriendAndFamily(addressBookModel1);
         }
     }
 }
